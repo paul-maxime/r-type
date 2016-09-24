@@ -59,11 +59,11 @@ Our _Entity Component System_ is a simplified version of Unity's.
 	    "y" : 0,
 	    "image" : "assets/boss.png"
 	  },
-	  "MovementComponent" = "wave",
+	  "MovementComponent" : "wave",
 	  "MissileSpawnComponent" :
 	  {
 	    "type" : "BossMissile",
-	    "minInterval" : 400
+	    "minInterval" : 400,
 	    "maxInterval" : 800
 	  },
 	  "LifeComponent" :
