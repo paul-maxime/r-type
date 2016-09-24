@@ -1,0 +1,69 @@
+{
+    "Stage":
+    {
+        "name" : "StageE : SURPRISE MOTHAFUCKA",
+        "next" : "StageF",
+        "actions":
+        [
+            ["StageName", 20, 40, 3],
+
+	        ["CrawlerB", 100, 50, 3],
+
+	        ["CrawlerB", 100, 70, 1, -250, -20],
+	        ["CrawlerA", 100, 75, 0.1, -250, -20],
+	        ["CrawlerA", 100, 65, 0, -250, -20],
+
+	        ["CrawlerC", 100, 50, 6, -200, 20],
+	        ["CrawlerB", 100, 55, 0.1, -200, 20],
+	        ["CrawlerB", 100, 45, 0, -200, 20],
+
+	        ["TankerC", 100, 60, 6, -150, 20],
+	        ["TankerA", 100, 67, 0.2, -150, 20],
+	        ["TankerA", 100, 53, 0, -150, 20],
+
+	        ["CrawlerC", 100, 30, 5, -150, 15],
+	        ["CrawlerB", 100, 25, 0.1, -150, 15],
+	        ["CrawlerB", 100, 35, 0, -150, 15],
+
+	        ["TankerC", 100, 50, 4, -150, 20],
+	        ["TankerA", 100, 57, 0.2, -150, 20],
+	        ["TankerA", 100, 43, 0, -150, 20],
+
+	        ["TankerC", 100, 40, 6, -150, 20],
+	        ["TankerB", 100, 47, 0.2, -150, 20],
+	        ["TankerB", 100, 33, 0, -150, 20]
+        ]
+    },
+
+    "AsteroidSpawner" :
+    {
+        "models": [
+            "asteroids/BackLarge",
+	        "asteroids/Large",
+            "asteroids/Medium",
+            "asteroids/Small"
+        ],
+        "minDelay": 0.35,
+        "maxDelay": 0.45
+    },
+
+    "MusicPlayer" :
+    {
+	    "file": "musics/UNSquadron.ogg"
+    },
+
+    "Transform" :
+    {
+        "position" : [40, 75]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 15,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true
+    }
+}

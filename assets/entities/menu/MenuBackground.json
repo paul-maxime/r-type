@@ -1,0 +1,9 @@
+{
+    "Transform" : {},
+    "Layer": -100,
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/menu/space.jpg"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "Transform" :
+    {
+	"position" : [450, 550]
+    },
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "text" : "",
+        "size" : 56,
+        "color" : { "r": 0, "g": 0, "b": 0 }
+    },
+
+    "TextInput" :
+    {
+	"spriteOn" : "sprites/ChampTexteOn.png",
+	"spriteOff" : "sprites/ChampTexteOff.png",
+        "text" : "1012"
+    }
+}

@@ -1,0 +1,57 @@
+{
+	"Transform" : {},
+	"SelfDestruction" : {},
+
+	"AudioSource" :
+	{
+		"isSpacial" : true
+	},
+
+	"SoundPlayer" :
+	{
+		"file" : "sounds/explosion5.ogg",
+		"volume" : 40
+	},
+
+	"Behavior" :
+	{
+		"speedX" : 400
+	},
+
+	"SpriteRenderer" : {},
+
+	"Animations" :
+	{
+		"sprite" : "sprites/EnergyShot.png",
+		"rows" : 1,
+		"columns" : 8,
+		"default" : "moving",
+		"animations" :
+		{
+			"moving" : [0, 1, 2, 3, 4, 5, 6, 7]
+		},
+		"animations_speed" :
+		{
+			"moving" : 0.05
+		}
+	},
+
+	"Collider":
+	{
+		"x": 11,
+		"y": 11,
+		"width": 21,
+		"height": 21
+	},
+
+	"Bullet":
+	{
+		"damage" : 1,
+		"team" : 1
+	},
+
+	"Explosive" :
+	{
+		"entity": "explosions/Small"
+	}
+}

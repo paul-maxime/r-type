@@ -1,0 +1,21 @@
+# binary files
+a.out
+bin
+plugins
+
+# temp files
+*~
+\#*\#
+.#*
+
+# built files
+build
+Debug
+Release
+*.o
+
+# personal files
+my_*
+
+# doxygen
+%*

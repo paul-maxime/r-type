@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	"position" : [252, 350]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/One Player.png"
+    },
+
+    "OnePlayerButton" : {}
+}

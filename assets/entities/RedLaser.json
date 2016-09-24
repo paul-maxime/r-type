@@ -1,0 +1,69 @@
+{
+    "Transform" :
+    {
+	"size" : [3, 1]
+    },
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/explosion4.ogg",
+        "volume" : 100
+    },
+
+    "Behavior" : {},
+
+    "SpriteRenderer" :
+    {
+	"color" :
+	{
+	    "r" : 255,
+	    "g" : 0,
+	    "b" : 0
+	}
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/Laser.png",
+	"rows" : 8,
+	"columns" : 1,
+	"default" : "attack",
+	"animations" :
+	{
+	    "attack" : [0, 1],
+	    "fade" : [1, 2, 3, 4, 5, 6, 7],
+	    "end" : [7]
+	},
+	"animations_speed" :
+	{
+	    "attack" : 0.05,
+	    "fade" : 0.08,
+	    "end" : 0
+	}
+    },
+
+    "Collider":
+    {
+	"x": 5,
+	"y": 9,
+	"width": 1035,
+	"height": 17
+    },
+
+    "Bullet":
+    {
+	"immortal": true
+    },
+
+    "FadeOut" :
+    {
+	"duration" : 2.5
+    },
+
+    "ParentDependent" : {}
+}

@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	"position" : [252, 600]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Options.png"
+    },
+    
+    "Button" : {}
+}

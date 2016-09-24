@@ -1,0 +1,64 @@
+{
+    "Transform" : {},
+    "SelfDestruction" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/explosion3.ogg",
+	"volume" : 95
+    },
+
+    "Behavior" :
+    {
+	"speedX" : -400
+    },
+
+    "SpriteRenderer" :
+    {
+	"color" :
+	{
+	    "r" : 22,
+	    "g" : 236,
+	    "b" : 250
+	}
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/BlastAttack.png",
+	"rows" : 1,
+	"columns" : 4,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.1
+	}
+    },
+
+    "Collider":
+    {
+	"x": 0,
+	"y": 0,
+	"width": 26,
+	"height": 48
+    },
+
+    "Bullet":
+    {
+    },
+
+    "Explosive" :
+    {
+	"entity": "explosions/Medium",
+	"position" : [-24, 0]
+    }
+}

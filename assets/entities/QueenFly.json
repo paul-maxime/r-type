@@ -1,0 +1,71 @@
+{
+    "Transform" :
+    {
+	"size" : [1.5, 1.5]
+    },
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "Behavior" :
+    {
+	"speedX" : -100
+    },
+    "DestroyEvent" : {},
+    "SpriteRenderer" : {},
+
+    "QueenFly" :
+    {
+	"offset" : [95, 193],
+	"anger_bullet_speed" : 550
+    },
+
+    "MusicPlayer" :
+    {
+	"file": "musics/boss.ogg",
+	"volume" : 75
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/QueenFly.png",
+	"rows" : 8,
+	"columns" : 4,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+	    "attack" : [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+	    "raging" : [5, 6, 7, 6],
+	    "spamming" : [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+	    "death" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.07,
+	    "attack" : 0.05,
+	    "raging" : 0.07,
+	    "spamming" : 0.02,
+	    "death" : 0.01
+	}
+    },
+
+    "Collider" :
+    {
+	"x": 51,
+	"y": 33,
+	"width": 113,
+	"height": 87,
+	"hitbox" : [[93, 118, 20, 13],
+		    [78, 133, 57, 115]],
+	"debug" : false
+    },
+
+    "ShootableEnemy":
+    {
+	"life": 1200,
+	"destroy" : false
+    }
+}

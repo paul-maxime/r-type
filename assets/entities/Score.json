@@ -1,0 +1,24 @@
+{
+    "Transform" :
+    {
+	"size" : [0.7, 0.7]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 25,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true,
+        "delta": [75, 25]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/HUDScore.png"
+    },
+
+    "Score" : {}
+}

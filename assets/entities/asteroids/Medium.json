@@ -1,0 +1,40 @@
+{
+    "Transform" :
+    {
+        "origin": [30, 28]
+    },
+
+	"Collider" :
+	{
+		"width": 60,
+		"height": 56
+	},
+
+	"DestroyEvent" : {},
+	"SelfDestruction" : {},
+
+	"SpriteRenderer" : {},
+
+	"Behavior" : {},
+
+	"ShootableEnemy" :
+	{
+        "life": 5,
+        "team": 2,
+        "damage": 5
+	},
+
+    "Explosive":
+    {
+        "entity": "explosions/Medium",
+        "position": [-20, -16]
+    },
+
+    "Asteroid" :
+    {
+        "sprites" : ["sprites/asteroids/red-medium.png",
+                     "sprites/asteroids/gray-medium.png",
+                     "sprites/asteroids/brown-medium.png"],
+        "child" : "asteroids/Small"
+    }
+}

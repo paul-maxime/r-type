@@ -1,0 +1,18 @@
+{
+    "Transform" :
+    {
+	"size" : [1.2, 1.2],
+	"position" : [200, 50]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Title.png"
+    },
+
+    "WaveShader" :
+    {
+	"wave_amplitudeX" : 25,
+	"wave_amplitudeY" : 10
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"Transform" : {},
+
+	"Weapons" :
+	{
+		"offset" : [0, 10],
+		"weapon" : "sideGuns",
+		"damage" : 5,
+		"cooldown" : 0.5,
+		"ammo" : "SliceBullet",
+		"angle" : 90,
+		"bullet_speed" : 500
+	}
+}

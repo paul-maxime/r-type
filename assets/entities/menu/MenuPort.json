@@ -1,0 +1,11 @@
+{
+    "Transform" :
+    {
+	"position" : [120, 450]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Port.png"
+    }
+}

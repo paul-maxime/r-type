@@ -1,0 +1,8 @@
+{
+    "Scene" :
+    [
+        "GameScene",
+        "Player",
+        "PlayerInputs"
+    ]
+}

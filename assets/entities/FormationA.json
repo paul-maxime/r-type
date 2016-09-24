@@ -1,0 +1,23 @@
+{
+    "Transform" :
+    {
+	"position" : [1000, 300]
+    },
+
+    "Formation" :
+    {
+	"leader" : "EnemyLeaderPhibonacci",
+	//relative to FormationA position
+	"leaderPosition" : [0, 0],
+	"sbires" : ["EnemyPhibonacci",
+		    "EnemyPhibonacci",
+		    "EnemyPhibonacci",
+		    "EnemyPhibonacci"],
+	// relative to leader
+	"sbiresPositions" : [50, 50, 0,
+			     50, -50, 0,
+			     100, 100, 0,
+			     100, -100, 0]
+    },
+    "DestroyEvent" : {}
+}

@@ -1,0 +1,16 @@
+{
+	"Transform" :
+	{
+		"position" : [200, 200]
+	},
+
+	"Weapons" :
+	{
+		"offset" : [5, 15],
+		"weapon" : "gun",
+		"cooldown" : 0.3,
+		"ammo" : "PlayerBullet",
+		"angle" : 0,
+		"bullet_speed" : 700
+	}
+}

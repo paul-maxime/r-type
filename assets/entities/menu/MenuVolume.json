@@ -1,0 +1,11 @@
+{
+    "Transform" :
+    {
+	"position" : [10, 350]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Volume.png"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "Transform" : {},
+    "SelfDestruction" : {},
+
+    "Behavior" :
+    {
+	"speedX" : -200,
+	"yMovements" : [100, -100],
+	"deltaTimeY" : 0.5
+    },
+
+    "SpriteRenderer" : {},
+
+    "Attack" :
+    {
+	"bullets" : ["Laser"],
+	"type" : "laser",
+	"cooldown" : 2,
+	"offset" : [-1035, 15]
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/SniperA.png",
+	"rows" : 5,
+	"columns" : 5,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3],
+	    "startAttacking" : [8, 9],
+	    "attacking" : [10, 11, 12, 13],
+	    "stopAttacking" : [15, 16, 17, 18, 19, 20, 21, 22, 23]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.1,
+	    "startAttacking" : 0.1,
+	    "attacking" : 0.09,
+	    "stopAttacking" : 0.03
+	}
+    },
+
+    "Collider" :
+    {
+	"x": 5,
+	"y": 5,
+	"width": 60,
+	"height": 60
+    },
+
+    "ShootableEnemy":
+    {
+	"life": 5,
+	"score": 300
+    },
+
+    "Explosive" :
+    {
+        "entity": "explosions/Medium",
+	"position": [-15, -15]
+    },
+
+    "DestroyEvent" : {}
+}

@@ -1,0 +1,62 @@
+{
+    "Transform" :
+    {
+	"size": [0.5, 0.5]
+    },
+    "SelfDestruction" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/explosion3.ogg",
+        "volume" : 95
+    },
+
+    "Behavior" :
+    {
+	"speedX" : 0,
+	"follow" : true,
+	"follow_speed" : 150
+    },
+
+    "SpriteRenderer" : {},
+
+    "Animations" :
+    {
+	"sprite" : "sprites/Plasma.png",
+	"rows" : 2,
+	"columns" : 4,
+	"default" : "attack",
+	"animations" :
+	{
+	    "attack" : [0, 1, 2, 3, 4, 5, 6]
+	},
+	"animations_speed" :
+	{
+	    "attack" : 0.05
+	}
+    },
+
+    "Collider":
+    {
+	"x": 0,
+	"y": 0,
+	"width": 58,
+	"height": 58
+    },
+
+    "Bullet":
+    {
+	"immortal": true
+    },
+
+    "Explosive":
+    {
+	"entity" : "explosions/Large",
+	"position" : [-48, -48]
+    }
+}

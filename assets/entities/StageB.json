@@ -1,0 +1,106 @@
+{
+    "Stage":
+    {
+        "name" : "StageB : Looks like they are angry.",
+        "next" : "StageC",
+        "actions" :
+        [
+            ["StageName", 20, 40, 3],
+
+            ["CrawlerC", 100, 10, 3, -130, 20],
+            ["CrawlerA", 100, 10, 1, -130, 20],
+            ["CrawlerB", 100, 10, 0.5, -130, 20],
+            ["CrawlerA", 100, 10, 0.5, -130, 20],
+            ["CrawlerB", 100, 10, 0.5, -130, 20],
+            ["SpeedBonus", 100, 10, 0.5, -130, 20],
+
+            ["CrawlerC", 100, 90, 0, -120, -25],
+            ["CrawlerA", 100, 90, 1, -120, -25],
+            ["CrawlerB", 100, 90, 0.5, -120, -25],
+            ["CrawlerA", 100, 90, 0.5, -120, -25],
+            ["CrawlerB", 100, 90, 0.5, -120, -25],
+            ["HealBonus", 100, 90, 0.5, -120, -25],
+
+            ["CrawlerC", 100, 40, 0, -160, 5],
+            ["CrawlerA", 100, 40, 1, -160, 5],
+            ["CrawlerB", 100, 40, 0.5, -160, 5],
+            ["CrawlerA", 100, 40, 0.5, -160, 5],
+            ["CrawlerB", 100, 40, 0.5, -160, 5],
+            ["WeaponBonus", 100, 40, 0.5, -160, 5],
+
+            ["SniperA", 100, 5, -1],
+            ["SniperA", 100, 90, 0],
+            ["SniperC", 100, 45, 0],
+            ["GravitationForce", 100, 40, 2],
+
+            ["BlasterB", 100, 0, 0, -140, 50],
+            ["BlasterA", 100, 5, 1, -140, 50],
+            ["BlasterA", 100, 10, 0.5, -140, 50],
+            ["BlasterA", 100, 15, 0.5, -140, 50],
+            ["BlasterA", 100, 20, 0.5, -140, 50],
+            ["SpeedBonus", 100, 25, 0.5, -140, 50],
+
+            ["GravitationForce", 100, 90, 0],
+
+            ["BlasterB", 100, 95, 0, -140, -150],
+            ["BlasterA", 100, 90, 1, -140, -150],
+            ["BlasterA", 100, 85, 0.5, -140, -150],
+            ["BlasterA", 100, 80, 0.5, -140, -150],
+            ["BlasterA", 100, 75, 0.5, -140, -150],
+            ["WeaponBonus", 100, 70, 0.5, -140, -150],
+
+            ["GravitationForce", 100, 45, 4],
+
+            ["TankerA", 100, 65, -1, -120, -35],
+            ["WeaponBonus", 100, 55, 0.7, -120, -35],
+            ["TankerA", 100, 60, 0, -120, -35],
+            ["TankerB", 100, 65, 0, -120, -35],
+            ["TankerA", 100, 70, 0, -120, -35],
+            ["TankerA", 100, 65, 0.7, -120, -35],
+
+            ["TankerC", 70, 100, 3, 20, -135],
+            ["TankerA", 70, 100, 0.5, 20, -135],
+            ["TankerA", 70, 100, 0.5, 20, -135],
+            ["HealBonus", 70, 100, 0.5, 20, -135],
+
+            ["BlasterC", 100, 30, -1],
+            ["BlasterC", 100, 45, 0],
+            ["BlasterC", 100, 60, 0],
+            ["WeaponBonus", 100, 30, 1],
+            ["SpeedBonus", 100, 45, 0],
+            ["WeaponBonus", 100, 60, 0],
+            ["GravitationForce", 100, 45, 1]
+        ]
+    },
+
+    "AsteroidSpawner" :
+    {
+        "models": [
+            "asteroids/BackLarge",
+            "asteroids/BackMedium",
+            "asteroids/BackSmall"
+        ],
+        "minDelay": 1.0,
+        "maxDelay": 5.0
+    },
+
+    "MusicPlayer" :
+    {
+	    "file": "musics/UNSquadron.ogg"
+    },
+
+    "Transform" :
+    {
+        "position" : [40, 75]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 15,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true
+    }
+}

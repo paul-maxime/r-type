@@ -1,0 +1,65 @@
+{
+    "Transform" : {},
+    "SelfDestruction" : {},
+
+    "Behavior" :
+    {
+	"speedX" : -100
+    },
+
+    "Attack" :
+    {
+	"bullets" : ["EnemyBullet"],
+	"type" : "shoot",
+	"quantity" : 5,
+	"spread" : 80,
+	"offset" : [60, 20],
+	"guided" : true
+    },
+
+    "SpriteRenderer" :
+    {
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/TankerC.png",
+	"rows" : 5,
+	"columns" : 5,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+	    "startAttacking" : [12, 13, 14, 15, 16],
+	    "attacking" : [17, 18, 19, 20]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.1,
+	    "startAttacking" : 0.05,
+	    "attacking" : 0.1
+	}
+    },
+
+    "Collider" :
+    {
+	"x": 30,
+	"y": 10,
+	"width": 60,
+	"height": 40
+    },
+
+    "ShootableEnemy":
+    {
+	"life": 15,
+        "score": 5000
+    },
+
+    "Explosive" :
+    {
+	"entity": "explosions/Medium",
+	"position": [-10, -10]
+    },
+
+    "DestroyEvent" : {}
+}

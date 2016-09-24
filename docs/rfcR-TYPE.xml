@@ -1,0 +1,369 @@
+<?txt version="1.0" encoding="US-ASCII"?>
+<!-- change the "txt" on the previous line to "xml" to make this a valid XML2RFC template -->
+<!-- this is version 5 of this xml2rfc template -->
+<!--
+    DOCTYPE processing
+
+To use this XML template, the rfc2629.dtd from the xml2rfc distribution should
+be in the local directory. The xml2rfc distribution is available from
+http://xml.resource.org/
+
+ The ENTITY clauses create an include of the named XML files, which
+contains references written in xml2rfc format.
+
+ XML2RFC offers an include feature described in the XML2RFC README
+  file.  That syntax, however, contradicts the DTD requirements to
+  have <reference> elements within the <references> element, so an
+  XML parser is likely to find your XML file invalid.  It may be
+  possible that XML2RFC will change their DTD so that the XML file
+  remains valid when their style of include is used.
+
+Some editors, such as XXE, resolve the ENTITY clauses before displaying the
+document to be edited.
+-->
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!ENTITY rfc768 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.0768.xml">
+<!ENTITY rfc2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
+<!ENTITY rfc2223 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2223.xml">
+<!ENTITY rfc2578 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2578.xml">
+<!ENTITY rfc2579 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2579.xml">
+<!ENTITY rfc2580 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2580.xml">
+<!ENTITY rfc2629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2629.xml">
+<!ENTITY rfc3410 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3410.xml">
+<!ENTITY rfc4181 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4181.xml">
+]>
+<?rfc toc="yes"?>
+<?rfc symrefs="yes"?>
+<?rfc compact="yes"?>
+<?rfc subcompact="no"?>
+<?rfc strict="no"?>
+<?rfc rfcedstyle="yes"?>
+<?rfc comments="yes"?>
+<?rfc inline="yes"?>
+
+<!-- Document  section
+
+Specify the category attribute per RFC2026
+options are info, std, bcp, or exp.
+
+docname is the name of the output document. This is optional;
+the default is to use the base portion of the XML filename.
+
+For Internet-drafts, indicate which intellectual property notice
+to use per the rules of RFC3978. The value (as of this template) can be:
+    trust200902 -
+    noModificationTrust200902 -
+    noDerivativesTrust200902 -
+    pre5378Trust200902 -
+
+ The Intellectual Property section will be generated automatically by
+  XML2RFC, based on the ipr attribute in the rfc element.
+
+If this document obsoletes an RFC, specify the RFC in the "obsoletes" attribute
+If this document updates an RFC, specify the RFC in the "updates" attribute
+-->
+<rfc category="std" docName="" ipr="trust200902" number="unreferenced">
+  <front>
+    <!--
+Enter the full document title and an abbreviated version
+  to use in the page header.
+-->
+
+    <title abbrev="R-Type protocol">R-Type protocol</title>
+
+    <!-- copy the author block as many times as needed, one for each author.-->
+
+    <!-- If the author is acting as editor, use the <role=editor> attribute-->
+
+    <!-- see RFC2223 for guidelines regarding author names -->
+
+    <author fullname="Jean Fauquenot" initials="JF" role="editor"
+            surname="fauque_j">
+      <organization>Epitech</organization>
+      <address>
+        <postal>
+          <street>24 rue Pasteur</street>
+          <city>94270 Le Kremlin-Bicêtre</city>
+          <country>France</country>
+        </postal>
+        <phone>01 44 08 00 50</phone>
+        <email>jean.fauquenot@gmail.com</email>
+      </address>
+    </author>
+
+    <!-- month and day will be generated automatically by XML2RFC;
+be sure the year is current.-->
+
+    <date year="2015" />
+
+    <!-- IETF area is optional -->
+
+    <area>online R-Type game</area>
+
+    <!--WG name at the upperleft corner of the doc,
+IETF is fine for non-WG IETF submissions -->
+
+    <workgroup>Internet Engineering Task Force</workgroup>
+
+    <keyword>Network Management</keyword>
+
+    <keyword>Management Information Base</keyword>
+
+    <keyword>MIB</keyword>
+
+    <keyword>SMIv2</keyword>
+
+    <!--add additional keywords here for IETF website search engine -->
+    <abstract>
+
+      <t>This document specifies an Internet protocol for the R-Type game.
+      Distribution of this memo is unlimited.</t>
+
+    </abstract>
+
+</front>
+
+  <middle>
+    <section title="Introduction">
+      <!--You can echo the abstract in the Introduction, providing citations here,
+but you should provide more than just the abstract. -->
+
+      <t>The R-Type we will refer to in this memo is a video game copy
+      of the actual R-Type game produced by Irem in 1987. From now on,
+      any mention of R-Type will refer to the copy one unless it is
+      specificaly said otherwise.</t>
+
+      <t>R-Type is an online shoot-em-up game that can be play from 1 to
+      an infinite number of player. It requires a server and a client to
+      be played with.</t>
+
+      <t>R-Type is strictly using the UDP protocol as defined in RFC 768 <xref
+      target="RFC0768"></xref>.</t>
+
+      <t>The maximum number of players required to play a map depends of the map.</t>
+
+      <t>The goal of this memo is to keep track of the R-Type protocol.</t>
+
+    </section>
+
+    <section title="RFC Editor's Philosophy">
+      <t>Since this document is very likely not to be read by anyone else,
+      the philosophy of this memo is "do enough but not too much".</t>
+    </section>
+
+    <section title="Conventions Used in This Document">
+
+      <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+      "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+      document are to be interpreted as described in BCP 14, RFC 2119 <xref
+      target="RFC2119"></xref>.</t>
+
+    </section>
+
+    <section title="Definitions">
+      <t>Every variable MUST be in little endian and MUST have the following form.</t>
+      <figure>
+	<artwork>
++--------+--------+--------+--------------+
+|   ID   | GameID |  Size  |     Datas    |
++--------+--------+--------+--------------+
+| uint16 | uint32 | uint16 | Size * uint8 |
++--------+--------+--------+--------------+</artwork>
+      </figure>
+      <t>ID MUST be an uint16. Each packet as an unique ID.</t>
+      <t>GameID MUST be an uint32. Each game room on the server as an
+      unique GameID.</t>
+      <t>Size MUST be an uint16. Size is the actual octet count of
+      Datas.</t>
+      <t>Datas has different interpretations depending on the ID.</t>
+
+      <t>For better clarification the following packets tables will
+      only describe the Datas of the packet.</t>
+
+      <section title="Default Types Used">
+	<t>If no mention converning a variable is made to its type then
+	it refers the default matching type of this section.</t>
+	<t>A size, either a byte size or an array size, MUST be an uint16.</t>
+	<t>SizeOfArray MUST be the number of case of an array. It
+	MUST NOT be its byte size. It MUST be followed by the array it
+	is linked to.</t>
+	<t>An array MUST be represented with end square brackets. The size
+	MAY be writen into the brackets.</t>
+	<t>A structure name MUST end with underscore and 't' ("_t") characters.</t>
+	<t>A bool is an uint8 value, equal to zero (false) or non-zero (true)..</t>
+      </section>
+
+      <section title="Update Entities">
+	<t>ID: 10</t>
+	<t>Update Entities contains entities from an "Entity Component System".
+	It sends the shared entities possessed by the sender to a receiver.</t>
+	<t>An Update Entities packet is an array of entity_t.</t>
+	<figure>
+	  <artwork>
++-------------+-------------------------------+
+| SizeOfArray |     entity_t[SizeOfArray]     |
++-------------+-------------------------------+
+|    uint16   | SizeOfArray * sizeof entity_t |
++-------------+-------------------------------+</artwork>
+	</figure>
+	<figure>
+	  <artwork>
+entity_t:
++----------+------------+
+| EntityID | SizeOfData :
++----------+------------+
+|  uint32  |   uint16   :
++----------+------------+
+
++------------+--------------------------+
+: SizeOfType |     Type[SizeOfType]     :
++------------+--------------------------+
+:   uint16   | SizeOfType * sizeof char :
++------------+--------------------------+
+
++------------+--------------------------+
+: SizeOfName |     Name[SizeOfName]     :
++------------+--------------------------+
+:   uint16   | SizeOfName * sizeof char :
++------------+--------------------------+
+
++---------+-----------+----------------------------+
+: IsOwner | IsEnabled | ComponentData[SizeOfData]  |
++---------+-----------+----------------------------+
+:  bool   |   bool    | SizeOfArray * sizeof uint8 |
++---------+-----------+----------------------------+</artwork>
+	</figure>
+
+      </section>
+
+    </section>
+
+
+      <section title="Security Considerations">
+	<t>Anybody can join any game. This protocol is inadequate to a
+	large community of players. Admins SHOULD find a way to
+	communicate with their community using IRC or another kind of
+	open chat system. Indeed, without further indications, a player
+	has no way to know if a room exist or not.</t>
+      </section>
+
+
+    <!-- The Author's Addresses section will be generated automatically by XML2RFC
+    from the front information. -->
+
+    <section title="Contributors">
+      <t>Paul-Maxime Le Duc contributed largely to the thinking of the
+      protocol.</t>
+    </section>
+  </middle>
+
+  <back>
+
+    <!-- References Section -->
+
+    <!-- Section 4.7f of [RFC2223bis] specifies the requirements for the
+   references sections.  In particular, there MUST be separate lists of
+   normative and informative references, each in a separate section.
+   The style SHOULD follow that of recently published RFCs.
+
+   The standard MIB boilerplate available at
+  the OPS Area web site includes lists of
+   normative and informative references that MUST appear in all IETF
+   specifications that contain MIB modules.  If items from other MIB
+   modules appear in an IMPORTS statement in the Definitions section,
+   then the specifications containing those MIB modules MUST be included
+   in the list of normative references.  When items are imported from an
+   IANA-maintained MIB module the corresponding normative reference
+   SHALL reference the on-line version of that MIB module.  It is the
+   policy of the RFC Editor that all references must be cited in the
+   text;  such citations MUST appear in the overview section where
+   documents containing imported definitions (other than those already
+   mentioned in the MIB boilerplate) are required to be mentioned (cf.
+   Section 3.2).
+
+In general, each normative reference SHOULD reference the most recent
+version of the specification in question.
+-->
+
+    <references title="Normative References">
+
+      &rfc768;
+
+        <!-- [TEMPLATE TODO] rfc2119, 2578, 2579, and 2580 are required to support MIB
+      module boilerplate text. -->
+
+      &rfc2119;
+
+      &rfc2578;
+
+      &rfc2579;
+
+      &rfc2580;
+
+    </references>
+
+    <references title="Informative References">
+
+      &rfc2223;
+
+      <!--  RFC3410 is required to support the boilerplate text.-->
+
+      &rfc3410;
+
+      &rfc2629;
+
+      &rfc4181;
+
+    </references>
+
+    <references title="URL References">
+<reference anchor="idguidelines">
+  <front>
+    <title>http://www.ietf.org/ietf/1id-guidelines.txt</title>
+    <author>
+      <organization>IETF Internet Drafts editor</organization>
+    </author>
+    <date year=""></date>
+  </front>
+</reference>
+<reference anchor="idnits">
+  <front>
+    <title>http://www.ietf.org/ID-Checklist.html</title>
+    <author>
+      <organization>IETF Internet Drafts editor</organization>
+    </author>
+    <date year=""></date>
+  </front>
+</reference>
+<reference anchor="xml2rfc">
+  <front>
+    <title>http://xml.resource.org</title>
+    <author>
+      <organization>XML2RFC tools and documentation</organization>
+    </author>
+    <date year=""></date>
+  </front>
+</reference>
+<reference anchor="ops">
+  <front>
+    <title>http://www.ops.ietf.org</title>
+    <author>
+      <organization>the IETF OPS Area</organization>
+    </author>
+    <date year=""></date>
+  </front>
+</reference>
+<reference anchor="ietf">
+  <front>
+    <title>http://tools.ietf.org</title>
+    <author>
+      <organization>IETF Tools Team</organization>
+    </author>
+    <date year=""></date>
+  </front>
+</reference>
+
+    </references>
+
+  </back>
+</rfc>

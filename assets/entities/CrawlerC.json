@@ -1,0 +1,59 @@
+{
+    "Transform" : {},
+    "SelfDestruction" : {},
+
+    "Behavior" :
+    {
+	"speedX" : -150
+    },
+
+    "SpriteRenderer" :
+    {
+    },
+
+    "Attack" :
+    {
+	"bullets" : ["CrawlerBullet"],
+	"type" : "shoot",
+	"cooldown" : 1,
+	"bullet_speed" : 500,
+	"offset" : [0, 2],
+	"guided" : true
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/CrawlerC.png",
+	"rows" : 3,
+	"columns" : 3,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4, 5, 6, 7, 8]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.1
+	}
+    },
+
+    "Collider" :
+    {
+	"width": 40,
+	"height": 28
+    },
+
+    "ShootableEnemy":
+    {
+	    "life": 5,
+		"score": 1000
+    },
+
+    "Explosive" :
+    {
+		"entity": "explosions/Medium",
+		"position": [-16, -16]
+    },
+
+    "DestroyEvent" : {}
+}

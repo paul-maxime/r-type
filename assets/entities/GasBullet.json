@@ -1,0 +1,55 @@
+{
+    "Transform" : {},
+    "SelfDestruction" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/lightshot2.ogg",
+        "volume" : 75
+    },
+
+    "Behavior" :
+    {
+	"speedX" : -400
+    },
+
+    "SpriteRenderer" : {},
+
+    "Animations" :
+    {
+	"sprite" : "sprites/GasAttack.png",
+	"rows" : 1,
+	"columns" : 4,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.05
+	}
+    },
+
+    "Collider":
+    {
+	"x": 0,
+	"y": 0,
+	"width": 14,
+	"height": 14
+    },
+
+    "Bullet":
+    {
+    },
+
+    "Explosive":
+    {
+        "entity": "GasExplosion"
+    }
+}

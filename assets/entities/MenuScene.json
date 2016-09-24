@@ -1,0 +1,7 @@
+{
+	"Scene" :
+    [
+        "WindowHandler",
+		"menu/Menu"
+	]
+}

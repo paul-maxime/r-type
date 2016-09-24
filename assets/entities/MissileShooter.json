@@ -1,0 +1,17 @@
+{
+    "Transform" :
+    {
+	"position" : [200, 200]
+    },
+
+    "Weapons" :
+    {
+	"offset" : [-30, 15],
+	"weapon" : "sideGuns",
+	"damage" : 3,
+	"cooldown" : 1.5,
+	"ammo" : "Missile",
+	"angle" : 0,
+	"bullet_speed" : 500
+    }
+}

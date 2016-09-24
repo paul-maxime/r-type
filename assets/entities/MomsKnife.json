@@ -1,0 +1,24 @@
+{
+	"Transform" : {},
+
+	"SpriteRenderer" :
+	{
+		"sprite" : "sprites/MomsKnife.png"
+	},
+
+	"Behavior" : {},
+
+	"MomsKnife" :
+	{
+		"offset" : [45, 18],
+		"damage" : 1
+	},
+
+	"Collider" :
+	{
+		"x" : 0,
+		"y" : 0,
+		"width" : 30,
+		"height" : 12
+	}
+}

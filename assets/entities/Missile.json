@@ -1,0 +1,66 @@
+{
+    "Transform" :
+    {
+	"size" : [1, 1],
+	"origin" : [62, 8]
+    },
+
+    "SelfDestruction" : {},
+
+    "Behavior" :
+    {
+	"speedX" : 500,
+	"total_follow_speed" : 500,
+	"follow_enemy" : true,
+	"follow_rotation" : true,
+	"rotationSpeed" : 300
+    },
+
+    "SpriteRenderer" : {},
+
+    "Animations" :
+    {
+	"sprite" : "sprites/Missile.png",
+	"rows" : 2,
+	"columns" : 2,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.03
+	}
+    },
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/gunloop.ogg",
+	"volume" : 30
+    },
+
+    "Collider":
+    {
+	"x": 50,
+	"y": 3,
+	"width": 23,
+	"height": 10
+    },
+
+    "Bullet":
+    {
+	"damage": 1,
+	"team": true
+    },
+
+    "Explosive":
+    {
+	"entity": "explosions/Small"
+    }
+}

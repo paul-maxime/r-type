@@ -1,0 +1,14 @@
+{
+    "Menu" : {},
+
+    "MusicPlayer" :
+    {
+	"file": "musics/Menu.ogg"
+    },
+
+    "GlobalPixelShader" :
+    {
+	"pixel_w" : 1,
+	"pixel_h" : 1
+    }
+}

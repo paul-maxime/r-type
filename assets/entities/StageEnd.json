@@ -1,0 +1,41 @@
+{
+    "Stage":
+    {
+        "name" : "The world is saved!",
+        "actions" :
+        [
+            ["YouWin", 30, 40, 4]
+        ]
+    },
+
+    "AsteroidSpawner" :
+    {
+        "models": [
+            "asteroids/BackLarge",
+            "asteroids/BackMedium",
+            "asteroids/BackSmall"
+        ],
+        "minDelay": 1.0,
+        "maxDelay": 5.0
+    },
+
+    "MusicPlayer" :
+    {
+	    "file": "musics/UNSquadron.ogg"
+    },
+
+    "Transform" :
+    {
+        "position" : [40, 75]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 15,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true
+    }
+}

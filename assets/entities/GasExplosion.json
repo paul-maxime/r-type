@@ -1,0 +1,34 @@
+{
+    "Transform" : {},
+
+    "SpriteRenderer" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/explosion.ogg",
+	"volume" : 80.0
+    },
+
+    "Animations" :
+    {
+        "sprite" : "sprites/GasExplosion.png",
+        "rows" : 1,
+        "columns" : 3,
+        "default" : "default",
+        "animations" :
+        {
+            "default" : [0, 1, 2]
+        },
+        "animations_speed" :
+        {
+            "default" : 0.09
+        }
+    },
+
+    "AnimationDeleter" : {}
+}

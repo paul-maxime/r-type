@@ -1,0 +1,16 @@
+{
+	"Transform" : {},
+
+	"Weapons" :
+	{
+		"offset" : [0, 3],
+		"weapon" : "gun",
+		"guided" : true,
+		"upgrade" : false,
+		"damage" : 1,
+		"cooldown" : 0.2,
+		"ammo" : "EnergyShot",
+		"angle" : 0,
+		"bullet_speed" : 500
+	}
+}

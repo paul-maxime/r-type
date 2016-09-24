@@ -1,0 +1,91 @@
+{
+    "Stage":
+    {
+        "name" : "StageC : Let's stretch a little !",
+        "next" : "StageD",
+        "actions" :
+        [
+            ["StageName", 20, 40, 3],
+
+	    ["CrawlerA", 100, 0, 3],
+	    ["CrawlerA", 100, 100, 0],
+	    ["CrawlerA", 100, 5, 0.3],
+	    ["CrawlerB", 100, 95, 0],
+            ["CrawlerA", 100, 10, 0.3],
+	    ["CrawlerA", 100, 90, 0],
+	    ["CrawlerB", 100, 15, 0.3],
+	    ["CrawlerA", 100, 85, 0],
+	    ["CrawlerA", 100, 20, 0.3],
+	    ["CrawlerA", 100, 80, 0],
+	    ["CrawlerB", 100, 25, 0.3],
+	    ["CrawlerA", 100, 75, 0],
+	    ["CrawlerA", 100, 30, 0.3],
+	    ["CrawlerA", 100, 70, 0],
+	    ["CrawlerB", 100, 35, 0.3],
+	    ["CrawlerA", 100, 65, 0],
+	    ["CrawlerA", 100, 40, 0.3],
+	    ["CrawlerA", 100, 60, 0],
+	    ["CrawlerB", 100, 45, 0.3],
+	    ["CrawlerA", 100, 55, 0],
+	    ["CrawlerA", 100, 50, 0.3],
+
+	    ["GravitationForce", 100, 50, 0.3],
+
+	    ["CrawlerB", 100, 45, 2],
+	    ["CrawlerB", 100, 55, 0],
+	    ["CrawlerC", 100, 50, 0.3],
+	    ["CrawlerB", 100, 45, 0.3],
+	    ["CrawlerB", 100, 55, 0],
+
+	    ["CrawlerB", 100, 15, 0.5],
+	    ["CrawlerB", 100, 25, 0],
+	    ["CrawlerC", 100, 20, 0.3],
+	    ["CrawlerB", 100, 15, 0.3],
+	    ["CrawlerB", 100, 25, 0],
+
+	    ["CrawlerB", 100, 75, 0.5],
+	    ["CrawlerB", 100, 85, 0],
+	    ["CrawlerC", 100, 80, 0.3],
+	    ["CrawlerB", 100, 75, 0.3],
+	    ["CrawlerB", 100, 85, 0],
+
+	    ["GravitationForce", 100, 90, 1],
+	    ["GravitationForce", 100, 50, 0],
+	    ["GravitationForce", 100, 10, 0]
+        ]
+    },
+
+    "AsteroidSpawner" :
+    {
+        "models": [
+            "asteroids/BackLarge",
+            "asteroids/BackMedium",
+            "asteroids/BackSmall",
+	    "asteroids/Large",
+            "asteroids/Medium",
+            "asteroids/Small"
+        ],
+        "minDelay": 1.0,
+        "maxDelay": 3.0
+    },
+
+    "MusicPlayer" :
+    {
+	"file": "musics/UNSquadron.ogg"
+    },
+
+    "Transform" :
+    {
+        "position" : [40, 75]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 15,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true
+    }
+}

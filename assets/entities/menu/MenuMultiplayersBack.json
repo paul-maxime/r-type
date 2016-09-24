@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	"position" : [50, 650]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/BackMenu.png"
+    },
+
+    "Button" : {}
+}

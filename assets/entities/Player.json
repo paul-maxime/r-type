@@ -1,0 +1,23 @@
+{
+    "Player" :
+    {
+        "ship" : "PlayerShip",
+        "lives" : 3,
+        "lifeTexture" : "sprites/heart-icon.png"
+    },
+
+    "Transform" :
+    {
+	    "position" : [825, 0],
+	    "size" : [0.7, 0.7]
+    },
+
+    "Layer" : 100,
+
+    "SpriteRenderer" :
+    {
+	    "sprite" : "sprites/HUDLives.png"
+    },
+
+    "KonamiCode" : {}
+}

@@ -1,0 +1,58 @@
+{
+    "Transform" :
+    {
+	"position" : [20, 350]
+    },
+
+    "DestroyEvent": {},
+
+    "SpriteRenderer" : {},
+
+    "Layer" : 50,
+
+    "Animations" :
+    {
+	"sprite" : "sprites/Player.png",
+	"rows" : 5,
+	"columns" : 6,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4],
+	    "startAttack" : [6, 7, 8, 9, 10, 11],
+	    "attack" : [12, 13, 14, 15],
+	    "stopAttack" : [23, 24, 25]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.05,
+	    "startAttack" : 0.02,
+	    "attack" : 0.07,
+	    "stopAttack" : 0.02
+	}
+    },
+
+    "PlayerShip" :
+    {
+	"ships" : ["sprites/Player.png",
+		   "sprites/Player1.png",
+		   "sprites/Player2.png",
+		   "sprites/Player3.png"],
+	"explosion" : "explosions/Medium"
+    },
+
+    "WeaponsHolder" : {},
+
+    "PlayerController" :
+    {
+	"speed" : 300.0
+    },
+
+    "Collider" :
+    {
+	"x": 12,
+	"y": 10,
+	"width": 24,
+	"height": 20
+    }
+}

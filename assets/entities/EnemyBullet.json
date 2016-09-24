@@ -1,0 +1,59 @@
+{
+	"Transform" : {},
+	"SelfDestruction" : {},
+
+	"AudioSource" :
+	{
+		"isSpacial" : true
+	},
+
+	"SoundPlayer" :
+	{
+		"file" : "sounds/lightshot.ogg"
+	},
+
+	"Behavior" :
+	{
+		"speedX" : -400,
+		"wait" : 0,
+		"duration" : 0.5
+	},
+
+	"SpriteRenderer" :
+	{
+		"color" : { "r": 255, "g": 0, "b": 0 }
+	},
+
+	"Animations" :
+	{
+		"sprite" : "sprites/bullet.png",
+		"rows" : 2,
+		"columns" : 2,
+		"default" : "moving",
+		"animations" :
+		{
+			"moving" : [0, 1, 2]
+		},
+		"animations_speed" :
+		{
+			"moving" : 0.1
+		}
+	},
+
+	"Collider":
+	{
+		"x": 0,
+		"y": 0,
+		"width": 5,
+		"height": 5
+	},
+
+	"Bullet":
+	{
+	},
+
+    "Explosive":
+    {
+		"entity": "explosions/Small"
+    }
+}

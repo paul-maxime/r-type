@@ -1,0 +1,12 @@
+{
+    "Transform" : {},
+    "Layer" : -90,
+
+    "Background" :
+    [
+	{
+	    "sprite" : "sprites/parallaxBackground.png",
+	    "speed" : 50
+	}
+    ]
+}

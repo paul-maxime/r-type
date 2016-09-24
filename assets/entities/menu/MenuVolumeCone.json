@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	"position" : [550, 325]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/VolumeCone.png"
+    },
+
+    "VolumeModifier": {}
+}

@@ -1,0 +1,25 @@
+{
+	"Transform" : {},
+	"SelfDestruction" : {},
+	"DestroyEvent" : {},
+
+	"TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 32,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow" : true,
+        "text": "The world is saved!"
+    },
+
+	"Collider" :
+	{
+		"width": 330,
+		"height": 32
+	},
+
+	"ShootableEnemy":
+	{
+		"life": 1500
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	"position" : [700, 650]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Join.png"
+    },
+    
+    "JoinButton" :{}
+}

@@ -1,0 +1,36 @@
+{
+    "Transform" : {},
+
+    "SpriteRenderer" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/explosion.ogg",
+	"volume" : 55.0
+    },
+
+    "Animations" :
+    {
+        "sprite" : "sprites/ExplosionTiny.png",
+        "rows" : 4,
+        "columns" : 4,
+        "default" : "default",
+        "animations" :
+        {
+            "default" : [0, 1, 2, 3, 4,
+                         5, 6, 7, 8, 9,
+                         10, 11, 12, 13]
+        },
+        "animations_speed" :
+        {
+            "default" : 0.05
+        }
+    },
+
+    "AnimationDeleter" : {}
+}

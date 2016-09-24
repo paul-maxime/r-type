@@ -1,0 +1,11 @@
+{
+    "Transform" :
+    {
+	"position" : [120, 550]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/IdRoom.png"
+    }
+}

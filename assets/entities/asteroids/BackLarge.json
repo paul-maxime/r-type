@@ -1,0 +1,25 @@
+{
+    "Transform" :
+    {
+        "origin": [75, 71],
+        "size": [0.75, 0.75]
+    },
+
+	"SelfDestruction" : {},
+
+    "Layer" : -50,
+
+	"SpriteRenderer" :
+    {
+        "color": { "a": 96, "r": 196, "g": 196, "b": 196 }
+    },
+
+	"Behavior" : {},
+
+    "Asteroid" :
+    {
+        "sprites" : ["sprites/asteroids/red-large.png",
+                     "sprites/asteroids/gray-large.png",
+                     "sprites/asteroids/brown-large.png"]
+    }
+}

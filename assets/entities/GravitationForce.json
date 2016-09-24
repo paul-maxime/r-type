@@ -1,0 +1,39 @@
+{
+	"Transform" :
+	{
+		"position" : [1000, 200],
+		"size" : [0.6, 0.6]
+	},
+
+    "SelfDestruction" : {},
+
+	"SpriteRenderer" : {},
+
+	"Animations" :
+	{
+		"sprite" : "sprites/Force.png",
+		"rows" : 1,
+		"columns" : 21,
+		"default" : "moving",
+		"animations" :
+		{
+			"moving" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+		},
+		"animations_speed" :
+		{
+			"moving" : 0.04
+		}
+	},
+
+	"Collider" :
+	{
+		"width": 60,
+		"height": 40
+	},
+
+	"GravitationForce" :
+	{
+		"weapons" : ["MissileShooter", "SubmachineGun", "SliceGun"]
+	}
+}

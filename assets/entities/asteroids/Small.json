@@ -1,0 +1,33 @@
+{
+    "Transform" :
+    {
+        "origin": [16, 15]
+    },
+
+	"Collider" :
+	{
+		"width": 32,
+		"height": 50
+	},
+
+	"DestroyEvent" : {},
+	"SelfDestruction" : {},
+
+	"SpriteRenderer" : {},
+
+	"Behavior" : {},
+
+	"ShootableEnemy" :
+	{
+        "life": 1,
+        "team": 2,
+        "damage": 1
+	},
+
+    "Asteroid" :
+    {
+        "sprites" : ["sprites/asteroids/red-small.png",
+                     "sprites/asteroids/gray-small.png",
+                     "sprites/asteroids/brown-small.png"]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "Transform" :
+    {
+	"position" : [1000, 100],
+	"size" : [1.2, 1.2]
+    },
+
+    "SelfDestruction" : {},
+
+    "SpriteRenderer" :
+    {
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/heal.png",
+	"rows" : 1,
+	"columns" : 12,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.04
+	}
+    },
+
+    "Behavior" :
+    {
+	"speedX" : -300
+    },
+    
+    "Collider" :
+    {
+	"x": 0,
+	"y": 0,
+	"width": 60,
+	"height": 40
+    },
+    
+    "HealBonus":
+    {
+    }
+    
+}

@@ -1,0 +1,11 @@
+{
+    "Transform" :
+    {
+	"position" : [120, 350]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Ip.png"
+    }
+}

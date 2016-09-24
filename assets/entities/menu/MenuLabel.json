@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	"size" : [0.3, 0.3],
+	"position" : [922, 0]
+    },
+    "Layer": 10,
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/LabelGDL.png"
+    }
+}

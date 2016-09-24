@@ -1,0 +1,23 @@
+{
+    "Scene" :
+    [
+        "WindowHandler",
+        "ColliderSystem",
+        "AudioListener",
+        "Background",
+        "Score",
+        "Time",
+        "StageA"
+    ],
+
+    "PlayerColorize" :
+    {
+    },
+
+    "GlobalPixelShader" :
+    {
+	    "pixel_w" : 35,
+	    "pixel_h" : 35,
+	    "activate" : false
+    }
+}

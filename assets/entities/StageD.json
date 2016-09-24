@@ -1,0 +1,157 @@
+{
+    "Stage":
+    {
+        "name" : "StageD : I heard you like balls",
+        "next" : "StageE",
+        "actions":
+        [
+            ["StageName", 20, 40, 3],
+
+	    // A
+	    ["WeaponBonus", 100, 80, 3, -150, -30],
+	    ["GravitationForce", 100, 30, -1, -50, 0],
+
+	    ["CrawlerB", 100, 30, 0, -200, -20],
+	    ["CrawlerA", 100, 35, 0.1, -200, -20],
+	    ["CrawlerA", 100, 25, 0, -200, -20],
+
+	    ["CrawlerB", 100, 105, 0, -250, -150],
+	    ["CrawlerA", 100, 110, 0.1, -250, -150],
+	    ["CrawlerA", 100, 100, 0, -250, -150],
+
+	    ["WeaponBonus", 100, 20, 0, -150, 30],
+
+	    ["CrawlerB", 100, 30, 4, -200, -20],
+	    ["CrawlerA", 100, 35, 0.1, -200, -20],
+	    ["CrawlerA", 100, 25, 0, -200, -20],
+
+	    ["TankerB", 100, 60, 0, -150, 20],
+	    ["TankerA", 100, 67, 0.2, -150, 20],
+	    ["TankerA", 100, 53, 0, -150, 20],
+
+	    ["CrawlerB", 100, -10, 0, -200, 150],
+	    ["CrawlerA", 100, -15, 0.1, -200, 150],
+	    ["CrawlerA", 100, -5, 0, -200, 150],
+
+	    ["GravitationForce", 100, 80, 0, -50, 0],
+
+	    ["CrawlerB", 100, 70, 5, -250, -20],
+	    ["CrawlerA", 100, 75, 0.1, -250, -20],
+	    ["CrawlerA", 100, 65, 0, -250, -20],
+
+	    ["CrawlerB", 100, 30, 0.1, -200, -20],
+	    ["CrawlerA", 100, 35, 0.1, -200, -20],
+	    ["CrawlerA", 100, 25, 0, -200, -20],
+
+	    ["TankerB", 100, 60, 3, -150, 20],
+	    ["TankerA", 100, 67, 0.2, -150, 20],
+	    ["TankerA", 100, 53, 0, -150, 20],
+
+	    // B
+	    ["WeaponBonus", 100, 50, -1, -150, 5],
+	    ["GravitationForce", 100, 60, -1, -50, 0],
+
+	    ["CrawlerB", 100, 70, 0, -250, -20],
+	    ["CrawlerA", 100, 75, 0.1, -250, -20],
+	    ["CrawlerA", 100, 65, 0, -250, -20],
+
+	    ["BlasterB", 100, 20, 6, -150, 20],
+	    ["BlasterA", 100, 27, 0.2, -150, 20],
+	    ["BlasterA", 100, 13, 0, -150, 20],
+
+	    ["WeaponBonus", 100, 50, 0, -150, 5],
+
+	    ["CrawlerB", 100, 70, 0, -250, -20],
+	    ["CrawlerA", 100, 75, 0.1, -250, -20],
+	    ["CrawlerA", 100, 65, 0, -250, -20],
+
+	    ["CrawlerB", 100, 30, 5, -200, -20],
+	    ["CrawlerA", 100, 35, 0.1, -200, -20],
+	    ["CrawlerA", 100, 25, 0, -200, -20],
+
+	    ["TankerB", 100, 60, 0, -150, 20],
+	    ["TankerA", 100, 67, 0.2, -150, 20],
+	    ["TankerA", 100, 53, 0, -150, 20],
+
+	    ["BlasterB", 100, 20, 3, -150, 20],
+	    ["BlasterA", 100, 27, 0.2, -150, 20],
+	    ["BlasterA", 100, 13, 0, -150, 20],
+
+	    ["GravitationForce", 100, 60, 0, -50, 0],
+
+	    ["CrawlerB", 100, 70, 0, -250, -20],
+	    ["CrawlerA", 100, 75, 0.1, -250, -20],
+	    ["CrawlerA", 100, 65, 0, -250, -20],
+
+	    ["SniperA", 100, 70, 5, -200, 20],
+
+
+	    // C
+	    ["GravitationForce", 100, 60, -1, -50, 0],
+	    ["WeaponBonus", 100, 50, -1, -150, 5],
+
+	    ["CrawlerB", 100, 30, 4, -200, -20],
+	    ["CrawlerA", 100, 35, 0.1, -200, -20],
+	    ["CrawlerA", 100, 25, 0, -200, -20],
+
+	    ["WeaponBonus", 100, 50, 0, -150, 5],
+
+	    ["BlasterB", 100, 20, 1, -150, 20],
+	    ["BlasterA", 100, 27, 0.2, -150, 20],
+	    ["BlasterA", 100, 13, 0, -150, 20],
+
+	    ["TankerB", 100, 60, 0, -150, 20],
+	    ["TankerA", 100, 67, 0.2, -150, 20],
+	    ["TankerA", 100, 53, 0, -150, 20],
+
+	    ["TankerB", 100, 30, 0.5, -150, 20],
+	    ["TankerA", 100, 37, 0.2, -150, 20],
+	    ["TankerA", 100, 23, 0, -150, 20],
+
+	    ["CrawlerB", 100, 30, 1, -200, -20],
+	    ["CrawlerA", 100, 35, 0.1, -200, -20],
+	    ["CrawlerA", 100, 25, 0, -200, -20],
+
+	    ["SniperB", 100, 30, 6, -150, 20],
+
+	    ["GravitationForce", 100, 60, 0, -50, 0],
+
+	    ["CrawlerB", 100, 70, 0, -250, -20],
+	    ["CrawlerA", 100, 75, 0.1, -250, -20],
+	    ["CrawlerA", 100, 65, 0, -250, -20],
+
+	    ["QueenFly", 100, 30, -1]
+        ]
+    },
+
+    "AsteroidSpawner" :
+    {
+        "models": [
+            "asteroids/BackLarge",
+            "asteroids/BackMedium",
+            "asteroids/BackSmall"
+        ],
+        "minDelay": 1.0,
+        "maxDelay": 3.0
+    },
+
+    "MusicPlayer" :
+    {
+	    "file": "musics/UNSquadron.ogg"
+    },
+
+    "Transform" :
+    {
+        "position" : [40, 75]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 15,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "Transform" :
+    {
+	"size" : [2, 2]
+    },
+
+    "SelfDestruction" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "Behavior" :
+    {
+	"speedX" : -400
+    },
+
+    "SpriteRenderer" : {},
+
+    "Animations" :
+    {
+	"sprite" : "sprites/GasAttack.png",
+	"rows" : 1,
+	"columns" : 4,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.05
+	}
+    },
+
+    "Collider":
+    {
+	"x": 0,
+	"y": 0,
+	"width": 28,
+	"height": 28
+    },
+
+    "Bullet":
+    {
+    },
+
+    "Explosive":
+    {
+        "entity": "GasExplosion"
+    }
+}

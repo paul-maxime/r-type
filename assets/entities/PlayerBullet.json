@@ -1,0 +1,48 @@
+{
+    "Transform" :
+    {
+	"size" : [0.4, 0.2]
+    },
+
+    "SelfDestruction" : {},
+
+    "Behavior" :
+    {
+	"speedX" : 500
+    },
+
+    "SpriteRenderer" :
+    {
+        "sprite": "sprites/PlayerShot.png"
+    },
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/gunloop.ogg",
+        "volume" : 30
+    },
+
+    "Collider":
+    {
+	"x": 20,
+	"y": 1,
+	"width": 20,
+	"height": 14
+    },
+
+    "Bullet":
+    {
+	"damage": 1,
+	"team": 1
+    },
+
+    "Explosive":
+    {
+	"entity": "explosions/Small"
+    }
+}

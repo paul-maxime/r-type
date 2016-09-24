@@ -1,0 +1,83 @@
+{
+    "Stage":
+    {
+        "name" : "StageF : IMA FIRIN MAH LAZOR !!!",
+        "next" : "StageEnd",
+        "actions":
+        [
+            ["StageName", 20, 40, 3],
+
+	    ["GravitationForce", 100, 90, 3],
+	    ["GravitationForce", 100, 10, 0],
+	    ["GravitationForce", 100, 50, 0],
+	    ["WeaponBonus", 100, 90, 0],
+	    ["WeaponBonus", 100, 10, 0],
+	    ["WeaponBonus", 100, 50, 0],
+
+	    // ["CrawlerC", 100, 50, 5],
+	    // ["SniperA", 100, 20, 0],
+	    // ["SniperA", 100, 80, 0],
+	    // ["WeaponBonus", 100, 50, 0],
+	    // ["CrawlerC", 100, 35, 0.5],
+	    // ["CrawlerC", 100, 65, 0],
+
+	    // ["SniperB", 100, 25, 13],
+	    // ["SniperB", 100, 45, 0],
+	    // ["SniperB", 100, 65, 0],
+	    // ["SniperB", 100, 85, 0],
+	    // ["SniperB", 100, 50, 0],
+	    // ["WeaponBonus", 100, 10, 0],
+
+	    ["BlasterB", 100, 0, 15],
+	    ["BlasterC", 100, 20, 0],
+	    ["BlasterB", 100, 40, 0],
+	    ["BlasterC", 100, 60, 0],
+	    ["BlasterB", 100, 80, 0],
+	    ["BlasterC", 100, 100, 0],
+	    ["SniperB", 100, 5, 10],
+	    ["SniperC", 100, 25, 0],
+	    ["SniperB", 100, 45, 0],
+	    ["WeaponBonus", 100, 90, 0],
+	    ["WeaponBonus", 100, 10, 0],
+	    ["WeaponBonus", 100, 50, 0],
+	    ["SniperC", 100, 65, 0],
+	    ["SniperB", 100, 85, 0],
+	    ["SniperC", 100, 95, 0],
+	    ["BlasterC", 100, 5, 15],
+	    ["BlasterC", 100, 15, 0],
+	    ["BlasterC", 100, 35, 0],
+	    ["BlasterC", 100, 65, 0],
+	    ["BlasterC", 100, 75, 0],
+	    ["BlasterC", 100, 90, 0],
+
+	    ["WeaponBonus", 100, 90, 8],
+	    ["WeaponBonus", 100, 10, 0],
+	    ["WeaponBonus", 100, 50, 0],
+	    ["GravitationForce", 100, 90, 0],
+	    ["GravitationForce", 100, 10, 0],
+	    ["GravitationForce", 100, 50, 0],
+
+	    ["Boss", 100, 50, 10]
+        ]
+    },
+
+    "MusicPlayer" :
+    {
+	    "file": "musics/UNSquadron.ogg"
+    },
+
+    "Transform" :
+    {
+        "position" : [40, 75]
+    },
+
+    "Layer" : 100,
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 15,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+        "shadow": true
+    }
+}

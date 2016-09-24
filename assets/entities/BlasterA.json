@@ -1,0 +1,64 @@
+{
+    "Transform" : {},
+    "SelfDestruction" : {},
+
+    "Behavior" :
+    {
+	"speedX" : -200,
+	"wait" : 3,
+	"duration" : 10
+    },
+
+    "SpriteRenderer" : {},
+
+    "Attack" :
+    {
+	"bullets" : ["BlasterBullet"],
+	"type" : "shoot",
+	"cooldown" : 2,
+	"bullet_speed" : 400,
+	"offset" : [0, 8]
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/BlasterA.png",
+	"rows" : 8,
+	"columns" : 8,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4, 5, 6, 7],
+	    "startAttacking" : [12, 13, 14],
+	    "attacking" : [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.1,
+	    "startAttacking" : 0.1,
+	    "attacking" : 0.05
+	}
+    },
+
+    "Collider" :
+    {
+	"x": 10,
+	"y": 10,
+	"width": 36,
+	"height": 42
+    },
+
+    "ShootableEnemy":
+    {
+	"life": 10,
+        "score": 200
+    },
+
+    "Explosive" :
+    {
+	"entity": "explosions/Medium",
+	"position": [-10, -10]
+    },
+
+    "DestroyEvent" : {}
+}

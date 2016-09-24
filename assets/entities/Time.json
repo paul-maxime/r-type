@@ -1,0 +1,23 @@
+{
+    "Transform" :
+    {
+	    "position" : [512, 90]
+    },
+
+    "TextRenderer" :
+    {
+        "font" : "fonts/CodeNewRoman.otf",
+        "size" : 40,
+        "color" : { "r": 0, "g": 204, "b": 255 },
+	    "delta" : [-33, -40],
+        "subline" : true
+    },
+
+    "Layer" : 100,
+
+    "TimeHUD" :
+    {
+	    "circle" : "sprites/HUDTime.png",
+	    "littleCircle" : "sprites/HUDTimeLittle.png"
+    }
+}

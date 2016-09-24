@@ -1,0 +1,40 @@
+{
+    "Transform" :
+    {
+        "size": [1, 0.05]
+    },
+
+    "Layer" : -1,
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/BossLaser.ogg"
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/boss/laser.png"
+    },
+
+    "Collider":
+    {
+	"x": 0,
+	"y": 0,
+	"width": 1100,
+	"height": 10,
+	"debug" : false
+    },
+
+    "LaserCollider" : {},
+    "LaserBoss" : {},
+
+    "Explosive":
+    {
+	"entity": "explosions/Small"
+    }
+}

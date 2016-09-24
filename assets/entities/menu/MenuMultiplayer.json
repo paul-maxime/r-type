@@ -1,0 +1,13 @@
+{
+    "Transform" :
+    {
+	    "position" : [252, 475]
+    },
+
+    "SpriteRenderer" :
+    {
+	"sprite" : "sprites/Multiplayer.png"
+    },
+
+    "Button" : {}
+}

@@ -1,0 +1,66 @@
+{
+    "Transform" :
+    {
+	"size" : [2, 2]
+    },
+    "SelfDestruction" : {},
+
+    "AudioSource" :
+    {
+	"isSpacial" : true
+    },
+
+    "SoundPlayer" :
+    {
+	"file" : "sounds/lightshot2.ogg",
+	"volume" : 75
+    },
+
+    "Behavior" :
+    {
+	"speedX" : -400
+    },
+
+    "SpriteRenderer" :
+    {
+	"color" :
+	{
+	    "r" : 255,
+	    "g" : 120,
+	    "b" : 0
+	}
+    },
+
+    "Animations" :
+    {
+	"sprite" : "sprites/CrawlerBullet.png",
+	"rows" : 2,
+	"columns" : 4,
+	"default" : "moving",
+	"animations" :
+	{
+	    "moving" : [0, 1, 2, 3, 4, 5, 6, 7]
+	},
+	"animations_speed" :
+	{
+	    "moving" : 0.05
+	}
+    },
+
+    "Collider":
+    {
+	"x": 14,
+	"y": 14,
+	"width": 40,
+	"height": 36
+    },
+
+    "Bullet":
+    {
+    },
+
+    "Explosive" :
+    {
+	"entity": "explosions/Small"
+    }
+}
