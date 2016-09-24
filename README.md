@@ -50,8 +50,8 @@ Our _Entity Component System_ is a simplified version of Unity's.
 
 + An entity is a json-like file and contains a list of components.
 
-Entity example (BossEnnemy.json)
-~~~~
+### Entity example (BossEnnemy.json)
+```json
     {
 	  "SpriteComponent" :
 	  {
@@ -71,12 +71,11 @@ Entity example (BossEnnemy.json)
 	    "life" : 1000
 	  }
 	}
-~~~~
+```
 _This is an example and not a valid entity._
 
-Component example (SpriteComponent.cpp)
-```
-#!c++
+### Component example (SpriteComponent.cpp)
+```c++
 	  class SpriteComponent : public Component
 	  {
 	    public:
@@ -113,6 +112,6 @@ _Again, this is a short example and not a working code._
 
 * Jean Fauquenot
 * Maxime Laffaire
-* Maxime Laffaire
+* Nicolas Vareille
 * Paul-Maxime Le Duc
 * Thibault Duval
